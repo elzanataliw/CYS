@@ -56,7 +56,7 @@ namespace CYS
             this.tbUsername.Size = new System.Drawing.Size(212, 34);
             this.tbUsername.TabIndex = 1;
             this.tbUsername.Text = "username";
-            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
+            
             // 
             // tbPassword
             // 
@@ -67,7 +67,6 @@ namespace CYS
             this.tbPassword.TabIndex = 2;
             this.tbPassword.Text = "username";
             this.tbPassword.UseSystemPasswordChar = true;
-            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // btSignin
             // 
