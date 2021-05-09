@@ -8,8 +8,15 @@ namespace CYS.Models
 {
     class User
     {
-        
         protected string _username;
         protected string _password;
+
+        public string username { get{
+            return _username;
+        } set{
+            _username = value;
+        } }
+        
+        
     }
 }
