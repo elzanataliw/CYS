@@ -7,24 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CYS.Models;
 
 namespace CYS
 {
     public partial class Login : Form
     {
+        LoginCredential newLogin;
+        
         public Login()
         {
             InitializeComponent();
+            bool loginStatus;
         }
 
-        private void tbUsername_TextChanged(object sender, EventArgs e)
+        private string GetUserPassword(string LoginName)
         {
-
+            using (var db = new ModelDB())
+            {
+                var user = db.LoginCredentials.Where(o => o.Username.ToLower().Equals(LoginName));
+                if (user.Any())
+                    return user.FirstOrDefault().Password;
+                else
+                    return string.Empty;
+            }
         }
 
-        private void tbPassword_TextChanged(object sender, EventArgs e)
+        public void LogIn()
         {
-
+           
         }
 
         private void btSignin_Click(object sender, EventArgs e)
@@ -34,12 +45,16 @@ namespace CYS
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Register registerForm = new Register();
+            registerForm.Show();
+            Close();
         }
 
         private void btHome_Click(object sender, EventArgs e)
         {
-
+            Form1 home = new Form1();
+            home.Show();
+            Close();
         }
     }
 }

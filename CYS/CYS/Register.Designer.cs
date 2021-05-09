@@ -68,7 +68,6 @@ namespace CYS
             this.tbName.Size = new System.Drawing.Size(212, 34);
             this.tbName.TabIndex = 9;
             this.tbName.Text = "name";
-            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // tbUsername
             // 
@@ -78,7 +77,6 @@ namespace CYS
             this.tbUsername.Size = new System.Drawing.Size(212, 34);
             this.tbUsername.TabIndex = 10;
             this.tbUsername.Text = "username";
-            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // tbPassword
             // 
@@ -90,7 +88,6 @@ namespace CYS
             this.tbPassword.Text = "password";
             this.tbPassword.UseSystemPasswordChar = true;
             this.tbPassword.UseWaitCursor = true;
-            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // btSignup
             // 
