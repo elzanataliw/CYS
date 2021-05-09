@@ -23,5 +23,17 @@ namespace CYS
             login.Show();
             this.Hide();
         }
+
+        private void btIngredient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btTakequiz_Click(object sender, EventArgs e)
+        {
+            Skinquiz quiz = new Skinquiz();
+            quiz.Show();
+            this.Hide();
+        }
     }
 }
