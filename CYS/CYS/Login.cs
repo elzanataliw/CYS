@@ -34,12 +34,16 @@ namespace CYS
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Register regist = new Register();
+            regist.Show();
+            this.Hide();
         }
 
         private void btHome_Click(object sender, EventArgs e)
         {
-
+            Home home = new Home();
+            home.Show();
+            this.Hide();
         }
     }
 }

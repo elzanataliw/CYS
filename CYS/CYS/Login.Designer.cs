@@ -87,7 +87,7 @@ namespace CYS
             this.label2.Location = new System.Drawing.Point(137, 325);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 23);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 0;
             this.label2.Text = "dont have any account?";
             // 
             // linkLabel1
@@ -108,7 +108,7 @@ namespace CYS
             this.btHome.Location = new System.Drawing.Point(487, 347);
             this.btHome.Name = "btHome";
             this.btHome.Size = new System.Drawing.Size(69, 30);
-            this.btHome.TabIndex = 6;
+            this.btHome.TabIndex = 5;
             this.btHome.Text = "home";
             this.btHome.UseVisualStyleBackColor = true;
             this.btHome.Click += new System.EventHandler(this.btHome_Click);
