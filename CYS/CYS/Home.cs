@@ -12,17 +12,15 @@ namespace CYS
 {
     public partial class Home : Form
     {
+
+        Login login = new Login();
+
         public Home()
         {
             InitializeComponent();
+            
         }
 
-        private void btSignin_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
-        }
 
         private void btIngredient_Click(object sender, EventArgs e)
         {
@@ -34,6 +32,40 @@ namespace CYS
             Skinquiz quiz = new Skinquiz();
             quiz.Show();
             this.Hide();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            if (login.loginStatus)
+            {
+                btSignin.Text = "log out";
+                label2.Text = "Hello " + login.UserID + "!";
+                btTakequiz.Enabled = true;
+            }else
+            {
+                btSignin.Text = "sign in";
+                label2.Text = "Hello Guest!";
+                btTakequiz.Enabled = false;
+            }
+        }
+
+        private void Home_Activated(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btSignin_Click(object sender, EventArgs e)
+        {
+            if (btSignin.Text.ToString()== "sign in")
+            {
+                login.ShowDialog();
+            }else if (btSignin.Text.ToString()== "log out")
+            {
+                login.loginStatus = false;
+            }
+
+            this.Home_Load(null, EventArgs.Empty);
+
         }
     }
 }

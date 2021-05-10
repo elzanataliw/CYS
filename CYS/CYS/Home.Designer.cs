@@ -92,7 +92,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 553);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(875, 468);
             this.Controls.Add(this.btIngredient);
             this.Controls.Add(this.btTakequiz);
             this.Controls.Add(this.label2);
@@ -100,6 +101,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Home";
             this.Text = "CYS";
+            this.Activated += new System.EventHandler(this.Home_Activated);
+            this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

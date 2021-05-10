@@ -13,48 +13,56 @@ namespace CYS
 {
     public partial class Login : Form
     {
-        LoginCredential newLogin;
-        
+
+        public bool loginStatus { get; set; }
+
+        public string UserID { get; set; }
+
         public Login()
         {
             InitializeComponent();
-            bool loginStatus;
+
+            
         }
 
-        private string GetUserPassword(string LoginName)
+        private void GetLoginStatus(string LoginName, string LoginPass)
         {
             using (var db = new ModelDB())
             {
-                var user = db.LoginCredentials.Where(o => o.Username.ToLower().Equals(LoginName));
-                if (user.Any())
-                    return user.FirstOrDefault().Password;
+                var query = from LoginCredential in db.LoginCredentials where LoginCredential.Username == LoginName && LoginCredential.Password==LoginPass select LoginCredential;
+                if (query.Any())
+                {
+                    loginStatus = true;
+                    UserID = LoginName;
+                }
                 else
-                    return string.Empty;
+                    loginStatus = false;
             }
         }
-
-        public void LogIn()
-        {
-           
-        }
-
+        
         private void btSignin_Click(object sender, EventArgs e)
         {
-
+            GetLoginStatus(tbUsername.Text.ToString(), tbPassword.Text.ToString());
+            if (loginStatus)
+            {
+                MessageBox.Show("Login Berhasil!");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Username atau password Anda salah");
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Register regist = new Register();
-            regist.Show();
-            this.Hide();
+            regist.ShowDialog();
         }
 
         private void btHome_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+            Close();
         }
     }
 }

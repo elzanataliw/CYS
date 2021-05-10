@@ -47,20 +47,17 @@ namespace CYS
         private void btSignup_Click(object sender, EventArgs e)
         {
             TambahData();
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
+            Close();
         }
 
         private void btHome_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+            Close();
         }
     }
 }
