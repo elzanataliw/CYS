@@ -14,6 +14,8 @@ namespace CYS
     {
 
         Login login = new Login();
+        Tips tip = new Tips();
+
         public Home()
         {
             InitializeComponent();
@@ -34,9 +36,9 @@ namespace CYS
 
         private void btTips_Click(object sender, EventArgs e)
         {
-            Tips tip = new Tips();
             tip.Show();
             this.Hide();
+            this.Home_Load(null, EventArgs.Empty);
         }
 
         private void Home_Load(object sender, EventArgs e)

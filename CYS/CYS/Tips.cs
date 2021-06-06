@@ -50,7 +50,17 @@ namespace CYS
         {
             Home home = new Home();
             home.Show();
-            Close();
+            this.Hide();
+        }
+
+        private void Tips_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
