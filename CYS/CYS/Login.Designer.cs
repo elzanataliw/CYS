@@ -41,50 +41,53 @@ namespace CYS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.label1.Location = new System.Drawing.Point(116, 63);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(145, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(354, 57);
+            this.label1.Size = new System.Drawing.Size(287, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "hi, welcome back!";
             // 
             // tbUsername
             // 
             this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(180, 155);
+            this.tbUsername.Location = new System.Drawing.Point(180, 158);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(212, 34);
+            this.tbUsername.Size = new System.Drawing.Size(212, 29);
             this.tbUsername.TabIndex = 1;
             this.tbUsername.Text = "username";
             // 
             // tbPassword
             // 
             this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(180, 207);
+            this.tbPassword.Location = new System.Drawing.Point(180, 210);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(212, 34);
+            this.tbPassword.Size = new System.Drawing.Size(212, 29);
             this.tbPassword.TabIndex = 2;
             this.tbPassword.Text = "username";
             this.tbPassword.UseSystemPasswordChar = true;
             // 
             // btSignin
             // 
+            this.btSignin.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btSignin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSignin.Location = new System.Drawing.Point(239, 257);
+            this.btSignin.ForeColor = System.Drawing.SystemColors.Info;
+            this.btSignin.Location = new System.Drawing.Point(239, 260);
             this.btSignin.Name = "btSignin";
             this.btSignin.Size = new System.Drawing.Size(98, 32);
             this.btSignin.TabIndex = 3;
             this.btSignin.Text = "sign in";
-            this.btSignin.UseVisualStyleBackColor = true;
+            this.btSignin.UseVisualStyleBackColor = false;
             this.btSignin.Click += new System.EventHandler(this.btSignin_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label2.Location = new System.Drawing.Point(137, 325);
+            this.label2.Location = new System.Drawing.Point(162, 340);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 23);
+            this.label2.Size = new System.Drawing.Size(155, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "dont have any account?";
             // 
@@ -92,9 +95,9 @@ namespace CYS
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.linkLabel1.Location = new System.Drawing.Point(336, 325);
+            this.linkLabel1.Location = new System.Drawing.Point(320, 340);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(105, 23);
+            this.linkLabel1.Size = new System.Drawing.Size(85, 19);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "sign up here";
@@ -102,20 +105,23 @@ namespace CYS
             // 
             // btHome
             // 
+            this.btHome.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btHome.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btHome.Location = new System.Drawing.Point(487, 347);
+            this.btHome.ForeColor = System.Drawing.SystemColors.Info;
+            this.btHome.Location = new System.Drawing.Point(480, 350);
             this.btHome.Name = "btHome";
             this.btHome.Size = new System.Drawing.Size(69, 30);
             this.btHome.TabIndex = 5;
             this.btHome.Text = "home";
-            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.UseVisualStyleBackColor = false;
             this.btHome.Click += new System.EventHandler(this.btHome_Click);
             // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(582, 403);
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.btHome);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);

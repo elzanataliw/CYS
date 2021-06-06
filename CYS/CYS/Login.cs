@@ -13,16 +13,11 @@ namespace CYS
 {
     public partial class Login : Form
     {
-
         public bool loginStatus { get; set; }
-
         public string UserID { get; set; }
-
         public Login()
         {
             InitializeComponent();
-
-            
         }
 
         private void GetLoginStatus(string LoginName, string LoginPass)
@@ -38,8 +33,8 @@ namespace CYS
                 else
                     loginStatus = false;
             }
-        }
-        
+        } 
+
         private void btSignin_Click(object sender, EventArgs e)
         {
             GetLoginStatus(tbUsername.Text.ToString(), tbPassword.Text.ToString());

@@ -14,7 +14,6 @@ namespace CYS
     public partial class Register : Form
     {
         LoginCredential newRegister;
-
         public Register()
         {
             InitializeComponent();
@@ -47,7 +46,6 @@ namespace CYS
         private void btSignup_Click(object sender, EventArgs e)
         {
             TambahData();
-            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

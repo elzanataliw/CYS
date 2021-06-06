@@ -14,13 +14,11 @@ namespace CYS
     {
 
         Login login = new Login();
-
         public Home()
         {
             InitializeComponent();
             
         }
-
 
         private void btIngredient_Click(object sender, EventArgs e)
         {
@@ -31,6 +29,13 @@ namespace CYS
         {
             Skinquiz quiz = new Skinquiz();
             quiz.Show();
+            this.Hide();
+        }
+
+        private void btTips_Click(object sender, EventArgs e)
+        {
+            Tips tip = new Tips();
+            tip.Show();
             this.Hide();
         }
 
@@ -63,9 +68,7 @@ namespace CYS
             {
                 login.loginStatus = false;
             }
-
             this.Home_Load(null, EventArgs.Empty);
-
         }
     }
 }
