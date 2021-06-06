@@ -76,6 +76,7 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngredientsAnswer.cs" />
     <Compile Include="ingridient.cs" />
     <Compile Include="LoginCredential.cs" />
     <Compile Include="ModelDB.cs" />

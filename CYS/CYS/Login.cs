@@ -24,6 +24,8 @@ namespace CYS
         {
             using (var db = new ModelDB())
             {
+
+                //get query for matching txtbox text and database
                 var query = from LoginCredential in db.LoginCredentials where LoginCredential.Username == LoginName && LoginCredential.Password==LoginPass select LoginCredential;
                 if (query.Any())
                 {
@@ -37,7 +39,9 @@ namespace CYS
 
         private void btSignin_Click(object sender, EventArgs e)
         {
+
             GetLoginStatus(tbUsername.Text.ToString(), tbPassword.Text.ToString());
+
             if (loginStatus)
             {
                 MessageBox.Show("Login Berhasil!");
