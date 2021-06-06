@@ -26,6 +26,7 @@ namespace CYS
             {
                 using (var dB = new ModelDB())
                 {
+                    //saving credential info into database
                     newRegister = new LoginCredential
                     {
                         Username = tbUsername.Text,

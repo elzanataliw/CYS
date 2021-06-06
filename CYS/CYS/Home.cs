@@ -36,9 +36,10 @@ namespace CYS
 
         private void Home_Load(object sender, EventArgs e)
         {
+            //condition for login stats
             if (login.loginStatus)
             {
-                btSignin.Text = "log out";
+                btSignin.Text = "log out";                      
                 label2.Text = "Hello " + login.UserID + "!";
                 btTakequiz.Enabled = true;
             }else
@@ -64,6 +65,7 @@ namespace CYS
                 login.loginStatus = false;
             }
 
+            //refresh form to load recent changes at login info
             this.Home_Load(null, EventArgs.Empty);
 
         }
