@@ -75,5 +75,10 @@ namespace CYS
             //refresh form to load recent changes at login info
             this.Home_Load(null, EventArgs.Empty);
         }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
