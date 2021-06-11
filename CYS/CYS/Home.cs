@@ -50,14 +50,12 @@ namespace CYS
                 btSignin.Text = "log out";                      
                 label2.Text = "Hello " + LoginHandler.username + "!";
                 btTakequiz.Enabled = true;
-                MessageBox.Show(LoginHandler.username);
             }
             else
             {
                 btSignin.Text = "sign in";
                 label2.Text = "Hello Guest!";
                 btTakequiz.Enabled = false;
-                MessageBox.Show(LoginHandler.username);
             }
         }
 
