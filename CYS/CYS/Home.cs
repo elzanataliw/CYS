@@ -31,14 +31,13 @@ namespace CYS
         {
             Skinquiz quiz = new Skinquiz();
             quiz.Activate();
-            Close();
+            this.Hide();
         }
 
         private void btTips_Click(object sender, EventArgs e)
         {
-            tip.();
-            Close();
-            this.Home_Load(null, EventArgs.Empty);
+            tip.Show();
+            this.Hide();
         }
 
         private void Home_Load(object sender, EventArgs e)
