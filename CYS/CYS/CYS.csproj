@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="quiz1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz1_1.Designer.cs">
+      <DependentUpon>quiz1_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,17 +103,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quiz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz2.Designer.cs">
+      <DependentUpon>quiz2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quiz3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz3.Designer.cs">
+      <DependentUpon>quiz3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quiz4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz4_1.Designer.cs">
+      <DependentUpon>quiz4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quiz4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz4_2.Designer.cs">
+      <DependentUpon>quiz4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quiz5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz5.Designer.cs">
+      <DependentUpon>quiz5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quiz6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quiz6.Designer.cs">
+      <DependentUpon>quiz6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Skinquiz.cs">
+    <Compile Include="quiz1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Skinquiz.Designer.cs">
-      <DependentUpon>Skinquiz.cs</DependentUpon>
+    <Compile Include="quiz1.Designer.cs">
+      <DependentUpon>quiz1.cs</DependentUpon>
     </Compile>
     <Compile Include="Tips.cs">
       <SubType>Form</SubType>
@@ -115,6 +157,9 @@
     <Compile Include="Tips.Designer.cs">
       <DependentUpon>Tips.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="quiz1_1.resx">
+      <DependentUpon>quiz1_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +178,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="quiz2.resx">
+      <DependentUpon>quiz2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quiz3.resx">
+      <DependentUpon>quiz3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quiz4_1.resx">
+      <DependentUpon>quiz4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quiz4_2.resx">
+      <DependentUpon>quiz4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quiz5.resx">
+      <DependentUpon>quiz5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quiz6.resx">
+      <DependentUpon>quiz6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,8 +203,8 @@
       <DependentUpon>Tips.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <EmbeddedResource Include="Skinquiz.resx">
-      <DependentUpon>Skinquiz.cs</DependentUpon>
+    <EmbeddedResource Include="quiz1.resx">
+      <DependentUpon>quiz1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

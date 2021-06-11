@@ -28,7 +28,7 @@ namespace CYS
 
         private void btTakequiz_Click(object sender, EventArgs e)
         {
-            Skinquiz quiz = new Skinquiz();
+            quiz1 quiz = new quiz1();
             quiz.Activate();
             this.Hide();
         }
