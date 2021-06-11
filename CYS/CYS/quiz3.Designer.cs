@@ -36,6 +36,7 @@
             this.cbDaily = new System.Windows.Forms.CheckBox();
             this.cbColourBalance = new System.Windows.Forms.CheckBox();
             this.lblWarning = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblQuestion
@@ -118,11 +119,21 @@
             this.lblWarning.TabIndex = 12;
             this.lblWarning.Text = "warning pilihan";
             // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(360, 445);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.TabIndex = 13;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            // 
             // quiz3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 506);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.cbColourBalance);
             this.Controls.Add(this.cbDaily);
@@ -148,5 +159,6 @@
         private System.Windows.Forms.CheckBox cbDaily;
         private System.Windows.Forms.CheckBox cbColourBalance;
         private System.Windows.Forms.Label lblWarning;
+        private System.Windows.Forms.Button btnNext;
     }
 }
