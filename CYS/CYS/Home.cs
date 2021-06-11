@@ -36,7 +36,7 @@ namespace CYS
 
         private void btTips_Click(object sender, EventArgs e)
         {
-            tip.();
+            tip.Show();
             Close();
             this.Home_Load(null, EventArgs.Empty);
         }
