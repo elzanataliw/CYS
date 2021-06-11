@@ -35,12 +35,16 @@ namespace CYS
 
         private void btOily_Click(object sender, EventArgs e)
         {
-
+            label2.Text = "If you have oily skin, consider double-cleansing. " +
+                "Double cleansing can help remove the makeup or dirt on " +
+                "your skin at the end of the day without leaving anything behind. " +
+                "To double-cleanse, start with an oil-based cleanser and " +
+                "follow up with a water-based cleanser or micellar water. ";
         }
 
         private void btCombi_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btSensi_Click(object sender, EventArgs e)

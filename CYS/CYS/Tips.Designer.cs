@@ -35,9 +35,9 @@ namespace CYS
             this.btOily = new System.Windows.Forms.Button();
             this.btCombi = new System.Windows.Forms.Button();
             this.btSensi = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.btHome = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,23 +122,13 @@ namespace CYS
             this.btSensi.UseVisualStyleBackColor = false;
             this.btSensi.Click += new System.EventHandler(this.btSensi_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoEllipsis = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Location = new System.Drawing.Point(3, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(389, 256);
-            this.label2.TabIndex = 9;
-            // 
             // btHome
             // 
             this.btHome.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btHome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btHome.ForeColor = System.Drawing.SystemColors.Info;
             this.btHome.Location = new System.Drawing.Point(775, 494);
-            this.btHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btHome.Margin = new System.Windows.Forms.Padding(4);
             this.btHome.Name = "btHome";
             this.btHome.Size = new System.Drawing.Size(92, 37);
             this.btHome.TabIndex = 10;
@@ -148,13 +138,27 @@ namespace CYS
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.groupBox1.Location = new System.Drawing.Point(317, 182);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(408, 277);
+            this.groupBox1.Size = new System.Drawing.Size(460, 298);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label2
+            // 
+            this.label2.AutoEllipsis = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(3, 18);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(454, 277);
+            this.label2.TabIndex = 9;
             // 
             // Tips
             // 
@@ -170,8 +174,11 @@ namespace CYS
             this.Controls.Add(this.btDry);
             this.Controls.Add(this.btNormal);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Tips";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tips";
             this.Load += new System.EventHandler(this.Tips_Load);
             this.groupBox1.ResumeLayout(false);
@@ -188,8 +195,8 @@ namespace CYS
         private System.Windows.Forms.Button btOily;
         private System.Windows.Forms.Button btCombi;
         private System.Windows.Forms.Button btSensi;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btHome;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
