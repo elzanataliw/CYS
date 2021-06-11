@@ -19,7 +19,6 @@ namespace CYS
         public Home()
         {
             InitializeComponent();
-            
         }
 
         private void btIngredient_Click(object sender, EventArgs e)
