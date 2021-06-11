@@ -30,30 +30,34 @@ namespace CYS
         private void btTakequiz_Click(object sender, EventArgs e)
         {
             Skinquiz quiz = new Skinquiz();
-            quiz.Show();
-            this.Hide();
+            quiz.Activate();
+            Close();
         }
 
         private void btTips_Click(object sender, EventArgs e)
         {
-            tip.Show();
-            this.Hide();
+            tip.();
+            Close();
             this.Home_Load(null, EventArgs.Empty);
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
+            
             //condition for login stats
-            if (login.loginStatus)
+            if (LoginHandler.loginstatus)
             {
                 btSignin.Text = "log out";                      
-                label2.Text = "Hello " + login.UserID + "!";
+                label2.Text = "Hello " + LoginHandler.username + "!";
                 btTakequiz.Enabled = true;
-            }else
+                MessageBox.Show(LoginHandler.username);
+            }
+            else
             {
                 btSignin.Text = "sign in";
                 label2.Text = "Hello Guest!";
                 btTakequiz.Enabled = false;
+                MessageBox.Show(LoginHandler.username);
             }
         }
 
@@ -69,7 +73,7 @@ namespace CYS
                 login.ShowDialog();
             }else if (btSignin.Text.ToString()== "log out")
             {
-                login.loginStatus = false;
+                LoginHandler.loginstatus = false;
             }
 
             //refresh form to load recent changes at login info

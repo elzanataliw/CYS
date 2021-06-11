@@ -45,6 +45,8 @@ namespace CYS
             if (loginStatus)
             {
                 MessageBox.Show("Login Berhasil!");
+                LoginHandler.username = tbUsername.Text.ToString();
+                LoginHandler.loginstatus = true;
                 Close();
             }
             else
@@ -62,6 +64,11 @@ namespace CYS
         private void btHome_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
