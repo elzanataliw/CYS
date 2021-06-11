@@ -39,7 +39,7 @@ namespace CYS
                 "Double cleansing can help remove the makeup or dirt on " +
                 "your skin at the end of the day without leaving anything behind. " +
                 "To double-cleanse, start with an oil-based cleanser and " +
-                "follow up with a water-based cleanser or micellar water. "
+                "follow up with a water-based cleanser or micellar water. ";
         }
 
         private void btCombi_Click(object sender, EventArgs e)
