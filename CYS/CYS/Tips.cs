@@ -29,8 +29,9 @@ namespace CYS
 
         private void btDry_Click(object sender, EventArgs e)
         {
-            label2.Text = "Avoid overwashing your skin, " +
-                "you have to choose a moisturizer with a thick consistency.";
+            label2.Text = "If you have dry skin, you want to hydrate, hydrate, hydrate!" +
+                "Avoid overwashing your skin you have to choose a " +
+                "moisturizer with a thick consistency.";
         }
 
         private void btOily_Click(object sender, EventArgs e)
@@ -44,12 +45,15 @@ namespace CYS
 
         private void btCombi_Click(object sender, EventArgs e)
         {
-            
+            label2.Text = "Finding the perfect balanced routine for combination skin can " +
+                "be a process of trial-and-error, so it might be best to start slow.";
         }
 
         private void btSensi_Click(object sender, EventArgs e)
         {
-
+            label2.Text = "Establishing a daily skin care routine for sensitive skin " +
+                "requires extra care. Gentle products that won't irritate your " +
+                "skin are crucial, so choose fragrance-free, hypoallergic products.";
         }
 
         private void btHome_Click(object sender, EventArgs e)
