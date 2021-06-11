@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CYS
 {
-    public partial class Skinquiz : Form
+    public partial class quiz5 : Form
     {
-        public Skinquiz()
+        public quiz5()
         {
             InitializeComponent();
         }
