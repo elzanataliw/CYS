@@ -77,6 +77,12 @@
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="IngredientsAnswer.cs" />
+    <Compile Include="IngredientsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngredientsShow.Designer.cs">
+      <DependentUpon>IngredientsShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingridient.cs" />
     <Compile Include="LoginCredential.cs" />
     <Compile Include="LoginHandler.cs" />
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngredientsShow.resx">
+      <DependentUpon>IngredientsShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
