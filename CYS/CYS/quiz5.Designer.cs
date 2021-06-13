@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.btn1 = new System.Windows.Forms.Button();
-            this.lblQuestion = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
@@ -46,20 +48,9 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(150, 62);
             this.btn1.TabIndex = 9;
-            this.btn1.Text = "<1 jam";
+            this.btn1.Text = "<1 hour";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            // 
-            // lblQuestion
-            // 
-            this.lblQuestion.AutoSize = true;
-            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.lblQuestion.Location = new System.Drawing.Point(135, 224);
-            this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(653, 46);
-            this.lblQuestion.TabIndex = 7;
-            this.lblQuestion.Text = "Berapa lama kamu kena sinar matahari?";
             // 
             // label1
             // 
@@ -80,7 +71,7 @@
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(150, 62);
             this.btn2.TabIndex = 9;
-            this.btn2.Text = "1-3 Jam";
+            this.btn2.Text = "1-3 hours";
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
@@ -93,7 +84,7 @@
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(150, 62);
             this.btn3.TabIndex = 9;
-            this.btn3.Text = "4-6 Jam";
+            this.btn3.Text = "4-6 hours";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
@@ -106,7 +97,7 @@
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(150, 62);
             this.btn4.TabIndex = 9;
-            this.btn4.Text = "7-8 Jam";
+            this.btn4.Text = "7-8 hours";
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
@@ -119,28 +110,50 @@
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(150, 62);
             this.btn5.TabIndex = 9;
-            this.btn5.Text = ">8 Jam";
+            this.btn5.Text = ">8 hours";
             this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            // 
+            // lblQuestion
+            // 
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.lblQuestion.Location = new System.Drawing.Point(6, 18);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(882, 46);
+            this.lblQuestion.TabIndex = 7;
+            this.lblQuestion.Text = "how long do you spend outside under direct sunlight?";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblQuestion);
+            this.groupBox1.Location = new System.Drawing.Point(142, 166);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(655, 138);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
             // 
             // quiz5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.BackgroundImage = global::CYS.Properties.Resources.background12;
             this.ClientSize = new System.Drawing.Size(912, 567);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz5";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,11 +162,12 @@
         #endregion
 
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Label lblQuestion;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

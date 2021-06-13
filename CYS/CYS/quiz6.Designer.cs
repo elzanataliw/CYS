@@ -44,7 +44,7 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(158, 82);
             this.btn1.TabIndex = 9;
-            this.btn1.Text = "8-10 Malam";
+            this.btn1.Text = "8 -10pm";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
@@ -53,11 +53,11 @@
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.lblQuestion.Location = new System.Drawing.Point(252, 227);
+            this.lblQuestion.Location = new System.Drawing.Point(64, 227);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(402, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(795, 46);
             this.lblQuestion.TabIndex = 7;
-            this.lblQuestion.Text = "Kamu tidur jam berapa?";
+            this.lblQuestion.Text = "what time do you usually go to sleep each night?";
             // 
             // label1
             // 
@@ -78,7 +78,7 @@
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(158, 82);
             this.btn2.TabIndex = 9;
-            this.btn2.Text = "10-12 Malam";
+            this.btn2.Text = "10pm -12am ";
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
@@ -91,7 +91,7 @@
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(158, 82);
             this.btn3.TabIndex = 9;
-            this.btn3.Text = "Lebih dari Jam 12 Malam";
+            this.btn3.Text = "after 12pm";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.BackgroundImage = global::CYS.Properties.Resources.background12;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);

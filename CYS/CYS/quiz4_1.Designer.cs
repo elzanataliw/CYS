@@ -43,9 +43,8 @@
             this.btnYa.Name = "btnYa";
             this.btnYa.Size = new System.Drawing.Size(200, 85);
             this.btnYa.TabIndex = 9;
-            this.btnYa.Text = "Iya";
+            this.btnYa.Text = "yes";
             this.btnYa.UseVisualStyleBackColor = false;
-            this.btnYa.UseVisualStyleBackColor = true;
             this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
@@ -57,9 +56,8 @@
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(200, 85);
             this.btnNo.TabIndex = 10;
-            this.btnNo.Text = "Tidak";
+            this.btnNo.Text = "no";
             this.btnNo.UseVisualStyleBackColor = false;
-            this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // lblQuestion
@@ -68,11 +66,11 @@
             this.lblQuestion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.lblQuestion.Location = new System.Drawing.Point(182, 227);
+            this.lblQuestion.Location = new System.Drawing.Point(120, 227);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(548, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(669, 46);
             this.lblQuestion.TabIndex = 7;
-            this.lblQuestion.Text = "Apakah sedang memakai retinol?";
+            this.lblQuestion.Text = "have you used retinol in the past month?";
             // 
             // label1
             // 
@@ -89,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.BackgroundImage = global::CYS.Properties.Resources.background12;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnYa);
             this.Controls.Add(this.btnNo);
