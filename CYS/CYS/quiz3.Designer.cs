@@ -104,9 +104,9 @@
             this.cbDaily.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbDaily.Location = new System.Drawing.Point(320, 76);
             this.cbDaily.Name = "cbDaily";
-            this.cbDaily.Size = new System.Drawing.Size(112, 28);
+            this.cbDaily.Size = new System.Drawing.Size(117, 28);
             this.cbDaily.TabIndex = 0;
-            this.cbDaily.Text = "daily care";
+            this.cbDaily.Text = "Daily Care";
             this.cbDaily.UseVisualStyleBackColor = true;
             this.cbDaily.CheckedChanged += new System.EventHandler(this.cbDaily_CheckedChanged);
             // 
@@ -116,9 +116,9 @@
             this.cbToneBalace.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbToneBalace.Location = new System.Drawing.Point(128, 76);
             this.cbToneBalace.Name = "cbToneBalace";
-            this.cbToneBalace.Size = new System.Drawing.Size(141, 28);
+            this.cbToneBalace.Size = new System.Drawing.Size(150, 28);
             this.cbToneBalace.TabIndex = 0;
-            this.cbToneBalace.Text = "tone balance";
+            this.cbToneBalace.Text = "Tone Balance";
             this.cbToneBalace.UseVisualStyleBackColor = true;
             this.cbToneBalace.CheckedChanged += new System.EventHandler(this.cbToneBalace_CheckedChanged);
             // 
@@ -128,9 +128,9 @@
             this.cbAntiAging.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbAntiAging.Location = new System.Drawing.Point(407, 18);
             this.cbAntiAging.Name = "cbAntiAging";
-            this.cbAntiAging.Size = new System.Drawing.Size(114, 28);
+            this.cbAntiAging.Size = new System.Drawing.Size(120, 28);
             this.cbAntiAging.TabIndex = 0;
-            this.cbAntiAging.Text = "anti-aging";
+            this.cbAntiAging.Text = "Anti-Aging";
             this.cbAntiAging.UseVisualStyleBackColor = true;
             this.cbAntiAging.CheckedChanged += new System.EventHandler(this.cbAntiAging_CheckedChanged);
             // 
@@ -140,9 +140,9 @@
             this.cbNoAcne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbNoAcne.Location = new System.Drawing.Point(221, 18);
             this.cbNoAcne.Name = "cbNoAcne";
-            this.cbNoAcne.Size = new System.Drawing.Size(149, 28);
+            this.cbNoAcne.Size = new System.Drawing.Size(155, 28);
             this.cbNoAcne.TabIndex = 0;
-            this.cbNoAcne.Text = "clear of acnes";
+            this.cbNoAcne.Text = "Clear of Acnes";
             this.cbNoAcne.UseVisualStyleBackColor = true;
             this.cbNoAcne.CheckedChanged += new System.EventHandler(this.cbNoAcne_CheckedChanged);
             // 
@@ -152,9 +152,9 @@
             this.cbLembab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbLembab.Location = new System.Drawing.Point(43, 18);
             this.cbLembab.Name = "cbLembab";
-            this.cbLembab.Size = new System.Drawing.Size(160, 28);
+            this.cbLembab.Size = new System.Drawing.Size(164, 28);
             this.cbLembab.TabIndex = 0;
-            this.cbLembab.Text = "boost hydrating";
+            this.cbLembab.Text = "Boost Hydrating";
             this.cbLembab.UseVisualStyleBackColor = true;
             this.cbLembab.CheckedChanged += new System.EventHandler(this.cbLembab_CheckedChanged_1);
             // 

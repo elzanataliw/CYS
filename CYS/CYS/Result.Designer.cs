@@ -53,7 +53,7 @@
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(364, 81);
+            this.lblQuestion.Location = new System.Drawing.Point(373, 84);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(99, 46);
             this.lblQuestion.TabIndex = 11;
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(288, 9);
+            this.label1.Location = new System.Drawing.Point(303, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 57);
             this.label1.TabIndex = 12;
@@ -82,24 +82,26 @@
             // 
             // lblName
             // 
+            this.lblName.BackColor = System.Drawing.SystemColors.Highlight;
             this.lblName.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(0, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(622, 46);
             this.lblName.TabIndex = 11;
-            this.lblName.Text = "lblNama Bahan";
+            this.lblName.Text = "Nama Bahan";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblDesc
             // 
+            this.lblDesc.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblDesc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblDesc.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesc.Location = new System.Drawing.Point(0, 46);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(622, 158);
             this.lblDesc.TabIndex = 11;
-            this.lblDesc.Text = "lblDesc";
+            this.lblDesc.Text = "Maaf tidak ada bahan yang cocok untuk jenis kulit/keinginan mu di database kami.";
             // 
             // btnHome
             // 
@@ -125,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CYS.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(894, 520);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSebelumnya);
@@ -132,6 +135,7 @@
             this.Controls.Add(this.btnSelanjutnya);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Result";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Result";

@@ -66,8 +66,19 @@ namespace CYS
                 }
             }
 
-            lblName.Text = Nama[counter];
-            lblDesc.Text = Desc[counter];
+            if (!IngredientsAnswer.IsSPF)
+            {
+                Desc.RemoveAt(Nama.IndexOf("SPF"));
+                Nama.Remove("SPF");
+            }
+
+            if (Nama.Any())
+            {
+                lblName.Text = Nama[counter];
+                lblDesc.Text = Desc[counter];
+            }
+
+            
 
             if (counter-1 > 0)
             {
@@ -76,6 +87,14 @@ namespace CYS
             else
             {
                 btnSebelumnya.Enabled = false;
+            }
+            if (counter + 1 >= Nama.Count)
+            {
+                btnSelanjutnya.Enabled = false;
+            }
+            else
+            {
+                btnSelanjutnya.Enabled = true;
             }
         }
 
@@ -101,7 +120,8 @@ namespace CYS
             {
                 btnSebelumnya.Enabled = false;
             }
-            if (counter + 1 > Nama.Count)
+
+            if (counter + 1 >= Nama.Count)
             {
                 btnSelanjutnya.Enabled = false;
             }

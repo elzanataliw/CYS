@@ -131,10 +131,10 @@
             this.rbMixed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.rbMixed.Location = new System.Drawing.Point(189, 61);
             this.rbMixed.Name = "rbMixed";
-            this.rbMixed.Size = new System.Drawing.Size(137, 28);
+            this.rbMixed.Size = new System.Drawing.Size(83, 28);
             this.rbMixed.TabIndex = 0;
             this.rbMixed.TabStop = true;
-            this.rbMixed.Text = "Combination";
+            this.rbMixed.Text = "Mixed";
             this.rbMixed.UseVisualStyleBackColor = true;
             // 
             // rbDry
