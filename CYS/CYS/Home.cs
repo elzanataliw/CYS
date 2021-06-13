@@ -23,7 +23,9 @@ namespace CYS
 
         private void btIngredient_Click(object sender, EventArgs e)
         {
-
+            IngredientsShow ingredientsShow = new IngredientsShow();
+            this.Hide();
+            ingredientsShow.Show();
         }
 
         private void btTakequiz_Click(object sender, EventArgs e)

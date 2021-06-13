@@ -35,6 +35,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSelanjutnya
@@ -45,6 +47,7 @@
             this.btnSelanjutnya.TabIndex = 14;
             this.btnSelanjutnya.Text = "Selanjutnya";
             this.btnSelanjutnya.UseVisualStyleBackColor = true;
+            this.btnSelanjutnya.Click += new System.EventHandler(this.btnSelanjutnya_Click);
             // 
             // lblQuestion
             // 
@@ -68,34 +71,35 @@
             // 
             // btnSebelumnya
             // 
+            this.btnSebelumnya.Enabled = false;
             this.btnSebelumnya.Location = new System.Drawing.Point(79, 390);
             this.btnSebelumnya.Name = "btnSebelumnya";
             this.btnSebelumnya.Size = new System.Drawing.Size(243, 104);
             this.btnSebelumnya.TabIndex = 13;
             this.btnSebelumnya.Text = "Sebelumnya";
             this.btnSebelumnya.UseVisualStyleBackColor = true;
+            this.btnSebelumnya.Click += new System.EventHandler(this.btnSebelumnya_Click);
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
+            this.lblName.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(290, 171);
+            this.lblName.Location = new System.Drawing.Point(0, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(263, 46);
+            this.lblName.Size = new System.Drawing.Size(622, 46);
             this.lblName.TabIndex = 11;
             this.lblName.Text = "lblNama Bahan";
-            this.lblName.Visible = false;
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblDesc
             // 
-            this.lblDesc.AutoSize = true;
-            this.lblDesc.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(349, 217);
+            this.lblDesc.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDesc.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(0, 46);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(135, 46);
+            this.lblDesc.Size = new System.Drawing.Size(622, 158);
             this.lblDesc.TabIndex = 11;
             this.lblDesc.Text = "lblDesc";
-            this.lblDesc.Visible = false;
             // 
             // btnHome
             // 
@@ -105,22 +109,34 @@
             this.btnHome.TabIndex = 14;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Controls.Add(this.lblDesc);
+            this.panel1.Location = new System.Drawing.Point(125, 142);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(622, 204);
+            this.panel1.TabIndex = 15;
             // 
             // Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 520);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSebelumnya);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnSelanjutnya);
-            this.Controls.Add(this.lblDesc);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
             this.Name = "Result";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Result";
             this.Load += new System.EventHandler(this.Result_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +151,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Panel panel1;
     }
 }

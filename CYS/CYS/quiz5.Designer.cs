@@ -48,6 +48,7 @@
             this.btn1.TabIndex = 9;
             this.btn1.Text = "<1 jam";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lblQuestion
             // 
