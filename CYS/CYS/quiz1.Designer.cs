@@ -50,36 +50,36 @@ namespace CYS
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.lblQuestion.Location = new System.Drawing.Point(137, 227);
+            this.lblQuestion.Location = new System.Drawing.Point(269, 227);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(640, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(358, 46);
             this.lblQuestion.TabIndex = 1;
-            this.lblQuestion.Text = "Mau nanya nih, kamu cowo atau cewe?";
+            this.lblQuestion.Text = "are you a girl or boy?";
             // 
             // btnCewe
             // 
             this.btnCewe.BackColor = System.Drawing.SystemColors.Info;
-            this.btnCewe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnCewe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnCewe.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnCewe.Location = new System.Drawing.Point(524, 322);
             this.btnCewe.Name = "btnCewe";
             this.btnCewe.Size = new System.Drawing.Size(200, 85);
             this.btnCewe.TabIndex = 2;
-            this.btnCewe.Text = "Cewe";
+            this.btnCewe.Text = "girl";
             this.btnCewe.UseVisualStyleBackColor = false;
             this.btnCewe.Click += new System.EventHandler(this.btnCewe_Click);
             // 
             // btnCowo
             // 
             this.btnCowo.BackColor = System.Drawing.SystemColors.Info;
-            this.btnCowo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnCowo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnCowo.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnCowo.Location = new System.Drawing.Point(202, 322);
             this.btnCowo.Name = "btnCowo";
             this.btnCowo.Size = new System.Drawing.Size(200, 85);
             this.btnCowo.TabIndex = 2;
-            this.btnCowo.Text = "Cowo";
-            this.btnCowo.UseVisualStyleBackColor = true;
+            this.btnCowo.Text = "boy";
+            this.btnCowo.UseVisualStyleBackColor = false;
             this.btnCowo.Click += new System.EventHandler(this.btnCowo_Click);
             // 
             // quiz1
@@ -87,7 +87,7 @@ namespace CYS
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.BackgroundImage = global::CYS.Properties.Resources.background12;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnCowo);
             this.Controls.Add(this.btnCewe);

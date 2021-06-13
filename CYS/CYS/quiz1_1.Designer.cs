@@ -37,29 +37,27 @@
             // btnYa
             // 
             this.btnYa.BackColor = System.Drawing.SystemColors.Info;
-            this.btnYa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnYa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnYa.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnYa.Location = new System.Drawing.Point(202, 322);
             this.btnYa.Name = "btnYa";
             this.btnYa.Size = new System.Drawing.Size(200, 85);
             this.btnYa.TabIndex = 5;
-            this.btnYa.Text = "Iya";
+            this.btnYa.Text = "yes";
             this.btnYa.UseVisualStyleBackColor = false;
-            this.btnYa.UseVisualStyleBackColor = true;
             this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
             // 
             this.btnNo.BackColor = System.Drawing.SystemColors.Info;
-            this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnNo.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnNo.Location = new System.Drawing.Point(524, 322);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(200, 85);
             this.btnNo.TabIndex = 6;
-            this.btnNo.Text = "Tidak";
+            this.btnNo.Text = "no";
             this.btnNo.UseVisualStyleBackColor = false;
-            this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // lblQuestion
@@ -67,11 +65,11 @@
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.lblQuestion.Location = new System.Drawing.Point(240, 227);
+            this.lblQuestion.Location = new System.Drawing.Point(96, 227);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(438, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(747, 46);
             this.lblQuestion.TabIndex = 3;
-            this.lblQuestion.Text = "Sedang Hamil/Menyusui ?";
+            this.lblQuestion.Text = "are you currently pregnant or breast feeding?";
             // 
             // label1
             // 
@@ -88,7 +86,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.BackgroundImage = global::CYS.Properties.Resources.background12;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnYa);
             this.Controls.Add(this.btnNo);

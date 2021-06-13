@@ -46,11 +46,11 @@
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.lblQuestion.Location = new System.Drawing.Point(202, 195);
+            this.lblQuestion.Location = new System.Drawing.Point(239, 215);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(596, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(423, 46);
             this.lblQuestion.TabIndex = 3;
-            this.lblQuestion.Text = "Pilih 2 kondisi kulit yang diinginkan";
+            this.lblQuestion.Text = "what are your skin goals?";
             // 
             // label1
             // 
@@ -66,11 +66,11 @@
             // 
             this.lblWarning.AutoSize = true;
             this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(408, 245);
+            this.lblWarning.Location = new System.Drawing.Point(374, 261);
             this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(213, 17);
+            this.lblWarning.Size = new System.Drawing.Size(155, 17);
             this.lblWarning.TabIndex = 12;
-            this.lblWarning.Text = "Pilihan Tidak Boleh Lebih Dari 2!";
+            this.lblWarning.Text = "Select up to 2 answers.";
             this.lblWarning.Visible = false;
             // 
             // btnNext
@@ -82,8 +82,8 @@
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(82, 40);
             this.btnNext.TabIndex = 13;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Text = "next";
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // panelCB
@@ -101,55 +101,60 @@
             // cbDaily
             // 
             this.cbDaily.AutoSize = true;
+            this.cbDaily.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbDaily.Location = new System.Drawing.Point(320, 76);
             this.cbDaily.Name = "cbDaily";
-            this.cbDaily.Size = new System.Drawing.Size(95, 21);
+            this.cbDaily.Size = new System.Drawing.Size(112, 28);
             this.cbDaily.TabIndex = 0;
-            this.cbDaily.Text = "Daily Care";
+            this.cbDaily.Text = "daily care";
             this.cbDaily.UseVisualStyleBackColor = true;
             this.cbDaily.CheckedChanged += new System.EventHandler(this.cbDaily_CheckedChanged);
             // 
             // cbToneBalace
             // 
             this.cbToneBalace.AutoSize = true;
+            this.cbToneBalace.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbToneBalace.Location = new System.Drawing.Point(128, 76);
             this.cbToneBalace.Name = "cbToneBalace";
-            this.cbToneBalace.Size = new System.Drawing.Size(118, 21);
+            this.cbToneBalace.Size = new System.Drawing.Size(141, 28);
             this.cbToneBalace.TabIndex = 0;
-            this.cbToneBalace.Text = "Tone Balance";
+            this.cbToneBalace.Text = "tone balance";
             this.cbToneBalace.UseVisualStyleBackColor = true;
             this.cbToneBalace.CheckedChanged += new System.EventHandler(this.cbToneBalace_CheckedChanged);
             // 
             // cbAntiAging
             // 
             this.cbAntiAging.AutoSize = true;
+            this.cbAntiAging.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbAntiAging.Location = new System.Drawing.Point(407, 18);
             this.cbAntiAging.Name = "cbAntiAging";
-            this.cbAntiAging.Size = new System.Drawing.Size(95, 21);
+            this.cbAntiAging.Size = new System.Drawing.Size(114, 28);
             this.cbAntiAging.TabIndex = 0;
-            this.cbAntiAging.Text = "Anti-Aging";
+            this.cbAntiAging.Text = "anti-aging";
             this.cbAntiAging.UseVisualStyleBackColor = true;
             this.cbAntiAging.CheckedChanged += new System.EventHandler(this.cbAntiAging_CheckedChanged);
             // 
             // cbNoAcne
             // 
             this.cbNoAcne.AutoSize = true;
+            this.cbNoAcne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbNoAcne.Location = new System.Drawing.Point(221, 18);
             this.cbNoAcne.Name = "cbNoAcne";
-            this.cbNoAcne.Size = new System.Drawing.Size(123, 21);
+            this.cbNoAcne.Size = new System.Drawing.Size(149, 28);
             this.cbNoAcne.TabIndex = 0;
-            this.cbNoAcne.Text = "Bebas Jerawat";
+            this.cbNoAcne.Text = "clear of acnes";
             this.cbNoAcne.UseVisualStyleBackColor = true;
             this.cbNoAcne.CheckedChanged += new System.EventHandler(this.cbNoAcne_CheckedChanged);
             // 
             // cbLembab
             // 
             this.cbLembab.AutoSize = true;
+            this.cbLembab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbLembab.Location = new System.Drawing.Point(43, 18);
             this.cbLembab.Name = "cbLembab";
-            this.cbLembab.Size = new System.Drawing.Size(81, 21);
+            this.cbLembab.Size = new System.Drawing.Size(160, 28);
             this.cbLembab.TabIndex = 0;
-            this.cbLembab.Text = "Lembab";
+            this.cbLembab.Text = "boost hydrating";
             this.cbLembab.UseVisualStyleBackColor = true;
             this.cbLembab.CheckedChanged += new System.EventHandler(this.cbLembab_CheckedChanged_1);
             // 
@@ -158,13 +163,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.BackgroundImage = global::CYS.Properties.Resources.background12;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.panelCB);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

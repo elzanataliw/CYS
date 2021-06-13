@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(90)))), ((int)(((byte)(120)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(170)))), ((int)(((byte)(200)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
             this.label1.Location = new System.Drawing.Point(145, 138);
@@ -51,9 +51,9 @@
             // 
             // btSignin
             // 
-            this.btSignin.BackColor = System.Drawing.SystemColors.Info;
+            this.btSignin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(150)))));
             this.btSignin.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btSignin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btSignin.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btSignin.Location = new System.Drawing.Point(779, 27);
             this.btSignin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSignin.Name = "btSignin";
@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(90)))), ((int)(((byte)(120)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(170)))), ((int)(((byte)(200)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(41, 32);
@@ -79,7 +79,7 @@
             // 
             this.btTakequiz.BackColor = System.Drawing.SystemColors.Info;
             this.btTakequiz.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.btTakequiz.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btTakequiz.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btTakequiz.Location = new System.Drawing.Point(503, 295);
             this.btTakequiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btTakequiz.Name = "btTakequiz";
@@ -93,7 +93,7 @@
             // 
             this.btIngredient.BackColor = System.Drawing.SystemColors.Info;
             this.btIngredient.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.btIngredient.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btIngredient.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btIngredient.Location = new System.Drawing.Point(245, 295);
             this.btIngredient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btIngredient.Name = "btIngredient";
@@ -107,7 +107,7 @@
             // 
             this.btTips.BackColor = System.Drawing.SystemColors.Info;
             this.btTips.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.btTips.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btTips.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btTips.Location = new System.Drawing.Point(245, 375);
             this.btTips.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btTips.Name = "btTips";
@@ -119,9 +119,9 @@
             // 
             // btExit
             // 
-            this.btExit.BackColor = System.Drawing.SystemColors.Info;
+            this.btExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(230)))), ((int)(((byte)(100)))));
             this.btExit.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btExit.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btExit.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btExit.Location = new System.Drawing.Point(819, 511);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(59, 33);
