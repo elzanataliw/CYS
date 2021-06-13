@@ -48,6 +48,7 @@ namespace CYS
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::CYS.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
