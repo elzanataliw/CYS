@@ -30,14 +30,14 @@
         {
             this.lblQuestion = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbLembab = new System.Windows.Forms.CheckBox();
-            this.cbJerawat = new System.Windows.Forms.CheckBox();
-            this.cbAging = new System.Windows.Forms.CheckBox();
-            this.cbDaily = new System.Windows.Forms.CheckBox();
-            this.cbColourBalance = new System.Windows.Forms.CheckBox();
             this.lblWarning = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.panelCB = new System.Windows.Forms.Panel();
+            this.cbDaily = new System.Windows.Forms.CheckBox();
+            this.cbToneBalace = new System.Windows.Forms.CheckBox();
+            this.cbAntiAging = new System.Windows.Forms.CheckBox();
+            this.cbNoAcne = new System.Windows.Forms.CheckBox();
+            this.cbLembab = new System.Windows.Forms.CheckBox();
             this.panelCB.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,66 +62,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "SKIN QUIZ";
             // 
-            // cbLembab
-            // 
-            this.cbLembab.AutoSize = true;
-            this.cbLembab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.cbLembab.Location = new System.Drawing.Point(94, 332);
-            this.cbLembab.Name = "cbLembab";
-            this.cbLembab.Size = new System.Drawing.Size(81, 21);
-            this.cbLembab.TabIndex = 5;
-            this.cbLembab.Text = "Lembab";
-            this.cbLembab.UseVisualStyleBackColor = true;
-            this.cbLembab.CheckedChanged += new System.EventHandler(this.cbLembab_CheckedChanged);
-            // 
-            // cbJerawat
-            // 
-            this.cbJerawat.AutoSize = true;
-            this.cbJerawat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.cbJerawat.Location = new System.Drawing.Point(337, 332);
-            this.cbJerawat.Name = "cbJerawat";
-            this.cbJerawat.Size = new System.Drawing.Size(154, 21);
-            this.cbJerawat.TabIndex = 5;
-            this.cbJerawat.Text = "Mengurangi jerawat";
-            this.cbJerawat.UseVisualStyleBackColor = true;
-            this.cbJerawat.CheckedChanged += new System.EventHandler(this.cbJerawat_CheckedChanged);
-            // 
-            // cbAging
-            // 
-            this.cbAging.AutoSize = true;
-            this.cbAging.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.cbAging.Location = new System.Drawing.Point(626, 332);
-            this.cbAging.Name = "cbAging";
-            this.cbAging.Size = new System.Drawing.Size(205, 21);
-            this.cbAging.TabIndex = 5;
-            this.cbAging.Text = "Mengurangi tanda penuaan";
-            this.cbAging.UseVisualStyleBackColor = true;
-            this.cbAging.CheckedChanged += new System.EventHandler(this.cbAging_CheckedChanged);
-            // 
-            // cbDaily
-            // 
-            this.cbDaily.AutoSize = true;
-            this.cbDaily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.cbDaily.Location = new System.Drawing.Point(474, 409);
-            this.cbDaily.Name = "cbDaily";
-            this.cbDaily.Size = new System.Drawing.Size(173, 21);
-            this.cbDaily.TabIndex = 5;
-            this.cbDaily.Text = "Perawatan rutin harian";
-            this.cbDaily.UseVisualStyleBackColor = true;
-            this.cbDaily.CheckedChanged += new System.EventHandler(this.cbDaily_CheckedChanged);
-            // 
-            // cbColourBalance
-            // 
-            this.cbColourBalance.AutoSize = true;
-            this.cbColourBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
-            this.cbColourBalance.Location = new System.Drawing.Point(233, 409);
-            this.cbColourBalance.Name = "cbColourBalance";
-            this.cbColourBalance.Size = new System.Drawing.Size(149, 21);
-            this.cbColourBalance.TabIndex = 5;
-            this.cbColourBalance.Text = "Warna kulit merata";
-            this.cbColourBalance.UseVisualStyleBackColor = true;
-            this.cbColourBalance.CheckedChanged += new System.EventHandler(this.cbColourBalance_CheckedChanged);
-            // 
             // lblWarning
             // 
             this.lblWarning.AutoSize = true;
@@ -143,21 +83,75 @@
             this.btnNext.Size = new System.Drawing.Size(82, 40);
             this.btnNext.TabIndex = 13;
             this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // panelCB
             // 
-            this.panelCB.Controls.Add(this.cbLembab);
-            this.panelCB.Controls.Add(this.cbJerawat);
-            this.panelCB.Controls.Add(this.cbColourBalance);
             this.panelCB.Controls.Add(this.cbDaily);
-            this.panelCB.Controls.Add(this.cbAging);
-            this.panelCB.Location = new System.Drawing.Point(147, 298);
+            this.panelCB.Controls.Add(this.cbToneBalace);
+            this.panelCB.Controls.Add(this.cbAntiAging);
+            this.panelCB.Controls.Add(this.cbNoAcne);
+            this.panelCB.Controls.Add(this.cbLembab);
+            this.panelCB.Location = new System.Drawing.Point(167, 332);
             this.panelCB.Name = "panelCB";
-            this.panelCB.Size = new System.Drawing.Size(554, 100);
+            this.panelCB.Size = new System.Drawing.Size(584, 123);
             this.panelCB.TabIndex = 14;
+            // 
+            // cbDaily
+            // 
+            this.cbDaily.AutoSize = true;
+            this.cbDaily.Location = new System.Drawing.Point(320, 76);
+            this.cbDaily.Name = "cbDaily";
+            this.cbDaily.Size = new System.Drawing.Size(95, 21);
+            this.cbDaily.TabIndex = 0;
+            this.cbDaily.Text = "Daily Care";
+            this.cbDaily.UseVisualStyleBackColor = true;
+            this.cbDaily.CheckedChanged += new System.EventHandler(this.cbDaily_CheckedChanged);
+            // 
+            // cbToneBalace
+            // 
+            this.cbToneBalace.AutoSize = true;
+            this.cbToneBalace.Location = new System.Drawing.Point(128, 76);
+            this.cbToneBalace.Name = "cbToneBalace";
+            this.cbToneBalace.Size = new System.Drawing.Size(118, 21);
+            this.cbToneBalace.TabIndex = 0;
+            this.cbToneBalace.Text = "Tone Balance";
+            this.cbToneBalace.UseVisualStyleBackColor = true;
+            this.cbToneBalace.CheckedChanged += new System.EventHandler(this.cbToneBalace_CheckedChanged);
+            // 
+            // cbAntiAging
+            // 
+            this.cbAntiAging.AutoSize = true;
+            this.cbAntiAging.Location = new System.Drawing.Point(407, 18);
+            this.cbAntiAging.Name = "cbAntiAging";
+            this.cbAntiAging.Size = new System.Drawing.Size(95, 21);
+            this.cbAntiAging.TabIndex = 0;
+            this.cbAntiAging.Text = "Anti-Aging";
+            this.cbAntiAging.UseVisualStyleBackColor = true;
+            this.cbAntiAging.CheckedChanged += new System.EventHandler(this.cbAntiAging_CheckedChanged);
+            // 
+            // cbNoAcne
+            // 
+            this.cbNoAcne.AutoSize = true;
+            this.cbNoAcne.Location = new System.Drawing.Point(221, 18);
+            this.cbNoAcne.Name = "cbNoAcne";
+            this.cbNoAcne.Size = new System.Drawing.Size(123, 21);
+            this.cbNoAcne.TabIndex = 0;
+            this.cbNoAcne.Text = "Bebas Jerawat";
+            this.cbNoAcne.UseVisualStyleBackColor = true;
+            this.cbNoAcne.CheckedChanged += new System.EventHandler(this.cbNoAcne_CheckedChanged);
+            // 
+            // cbLembab
+            // 
+            this.cbLembab.AutoSize = true;
+            this.cbLembab.Location = new System.Drawing.Point(43, 18);
+            this.cbLembab.Name = "cbLembab";
+            this.cbLembab.Size = new System.Drawing.Size(81, 21);
+            this.cbLembab.TabIndex = 0;
+            this.cbLembab.Text = "Lembab";
+            this.cbLembab.UseVisualStyleBackColor = true;
+            this.cbLembab.CheckedChanged += new System.EventHandler(this.cbLembab_CheckedChanged_1);
             // 
             // quiz3
             // 
@@ -166,6 +160,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::CYS.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(912, 567);
+            this.Controls.Add(this.panelCB);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.lblQuestion);
@@ -185,13 +180,13 @@
 
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbLembab;
-        private System.Windows.Forms.CheckBox cbJerawat;
-        private System.Windows.Forms.CheckBox cbAging;
-        private System.Windows.Forms.CheckBox cbDaily;
-        private System.Windows.Forms.CheckBox cbColourBalance;
         private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Panel panelCB;
+        private System.Windows.Forms.CheckBox cbDaily;
+        private System.Windows.Forms.CheckBox cbToneBalace;
+        private System.Windows.Forms.CheckBox cbAntiAging;
+        private System.Windows.Forms.CheckBox cbNoAcne;
+        private System.Windows.Forms.CheckBox cbLembab;
     }
 }

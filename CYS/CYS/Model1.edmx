@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="IngredientsLogic">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ingredientsId" Type="int" Nullable="false" />
+          <Property Name="isPregnant" Type="bit" />
+          <Property Name="isUsingBHAetc" Type="bit" />
+          <Property Name="isUsingRetinol" Type="bit" />
+          <Property Name="targetCondition" Type="nvarchar" MaxLength="200" />
+          <Property Name="skinWishCondition" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ingridients">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="NamaBahan" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DeskripsiBahan" Type="nvarchar" MaxLength="2000" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LoginCredentials">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nama" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="IngredientsLogic" EntityType="Self.IngredientsLogic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ingridients" EntityType="Self.ingridients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoginCredentials" EntityType="Self.LoginCredentials" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="IngredientsLogic">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ingredientsId" Type="Int32" Nullable="false" />
+          <Property Name="isPregnant" Type="Boolean" />
+          <Property Name="isUsingBHAetc" Type="Boolean" />
+          <Property Name="isUsingRetinol" Type="Boolean" />
+          <Property Name="targetCondition" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="skinWishCondition" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ingridient" Relationship="Model.ingridientIngredientsLogic" FromRole="IngredientsLogic" ToRole="ingridient" />
+        </EntityType>
+        <EntityType Name="ingridient">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="NamaBahan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DeskripsiBahan" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="IngredientsLogics" Relationship="Model.ingridientIngredientsLogic" FromRole="ingridient" ToRole="IngredientsLogic" />
+        </EntityType>
+        <EntityType Name="LoginCredential">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nama" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelDb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="IngredientsLogics" EntityType="Self.IngredientsLogic" />
+          <EntitySet Name="ingridients" EntityType="Self.ingridient" />
+          <EntitySet Name="LoginCredentials" EntityType="Self.LoginCredential" />
+          <AssociationSet Name="ingridientIngredientsLogic" Association="Model.ingridientIngredientsLogic">
+            <End Role="ingridient" EntitySet="ingridients" />
+            <End Role="IngredientsLogic" EntitySet="IngredientsLogics" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="ingridientIngredientsLogic">
+          <End Type="Model.ingridient" Role="ingridient" Multiplicity="1" />
+          <End Type="Model.IngredientsLogic" Role="IngredientsLogic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ingridient">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IngredientsLogic">
+              <PropertyRef Name="ingredientsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ModelDb">
+          <EntitySetMapping Name="IngredientsLogics">
+            <EntityTypeMapping TypeName="Model.IngredientsLogic">
+              <MappingFragment StoreEntitySet="IngredientsLogic">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ingredientsId" ColumnName="ingredientsId" />
+                <ScalarProperty Name="isPregnant" ColumnName="isPregnant" />
+                <ScalarProperty Name="isUsingBHAetc" ColumnName="isUsingBHAetc" />
+                <ScalarProperty Name="isUsingRetinol" ColumnName="isUsingRetinol" />
+                <ScalarProperty Name="targetCondition" ColumnName="targetCondition" />
+                <ScalarProperty Name="skinWishCondition" ColumnName="skinWishCondition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ingridients">
+            <EntityTypeMapping TypeName="Model.ingridient">
+              <MappingFragment StoreEntitySet="ingridients">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="NamaBahan" ColumnName="NamaBahan" />
+                <ScalarProperty Name="DeskripsiBahan" ColumnName="DeskripsiBahan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoginCredentials">
+            <EntityTypeMapping TypeName="Model.LoginCredential">
+              <MappingFragment StoreEntitySet="LoginCredentials">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Nama" ColumnName="Nama" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
