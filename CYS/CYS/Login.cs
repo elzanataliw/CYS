@@ -22,7 +22,7 @@ namespace CYS
 
         private void GetLoginStatus(string LoginName, string LoginPass)
         {
-            using (var db = new ModelDB())
+            using (var db = new ModelDb())
             {
 
                 //get query for matching txtbox text and database

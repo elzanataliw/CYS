@@ -23,7 +23,7 @@ namespace CYS
         {
             if (tbName.Text != "" && tbUsername.Text != "" & tbPassword.Text != "")
             {
-                using (var dB = new ModelDB())
+                using (var dB = new ModelDb())
                 {
                     //saving credential info into database
                     newRegister = new LoginCredential
@@ -58,5 +58,6 @@ namespace CYS
         {
             Close();
         }
+        
     }
 }

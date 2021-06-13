@@ -12,11 +12,16 @@ namespace CYS
     using System;
     using System.Collections.Generic;
     
-    public partial class LoginCredential
+    public partial class IngredientsLogic
     {
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Nama { get; set; }
+        public int ingredientsId { get; set; }
+        public Nullable<bool> isPregnant { get; set; }
+        public Nullable<bool> isUsingBHAetc { get; set; }
+        public Nullable<bool> isUsingRetinol { get; set; }
+        public string targetCondition { get; set; }
+        public string skinWishCondition { get; set; }
+    
+        public virtual ingridient ingridient { get; set; }
     }
 }

@@ -30,5 +30,6 @@ namespace CYS
             quiz1_1 quiz = new quiz1_1();
             quiz.Show();
         }
+        
     }
 }

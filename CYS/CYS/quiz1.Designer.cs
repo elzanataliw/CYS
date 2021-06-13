@@ -67,6 +67,7 @@ namespace CYS
             this.btnCewe.TabIndex = 2;
             this.btnCewe.Text = "Cewe";
             this.btnCewe.UseVisualStyleBackColor = false;
+            this.btnCewe.Click += new System.EventHandler(this.btnCewe_Click);
             // 
             // btnCowo
             // 
@@ -78,7 +79,6 @@ namespace CYS
             this.btnCowo.Size = new System.Drawing.Size(200, 85);
             this.btnCowo.TabIndex = 2;
             this.btnCowo.Text = "Cowo";
-            this.btnCowo.UseVisualStyleBackColor = false;
             this.btnCowo.UseVisualStyleBackColor = true;
             this.btnCowo.Click += new System.EventHandler(this.btnCowo_Click);
             // 
