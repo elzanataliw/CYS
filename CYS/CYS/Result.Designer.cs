@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 506);
+            this.ClientSize = new System.Drawing.Size(894, 520);
             this.Controls.Add(this.btnSebelumnya);
             this.Controls.Add(this.btnSelanjutnya);
             this.Controls.Add(this.lblDesc);
