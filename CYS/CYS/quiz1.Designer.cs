@@ -79,6 +79,8 @@ namespace CYS
             this.btnCowo.TabIndex = 2;
             this.btnCowo.Text = "Cowo";
             this.btnCowo.UseVisualStyleBackColor = false;
+            this.btnCowo.UseVisualStyleBackColor = true;
+            this.btnCowo.Click += new System.EventHandler(this.btnCowo_Click);
             // 
             // quiz1
             // 

@@ -29,7 +29,7 @@ namespace CYS
         private void btTakequiz_Click(object sender, EventArgs e)
         {
             quiz1 quiz = new quiz1();
-            quiz.Activate();
+            quiz.Show();
             this.Hide();
         }
 

@@ -34,11 +34,12 @@
             this.btnSebelumnya = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSelanjutnya
             // 
-            this.btnSelanjutnya.Location = new System.Drawing.Point(549, 380);
+            this.btnSelanjutnya.Location = new System.Drawing.Point(550, 390);
             this.btnSelanjutnya.Name = "btnSelanjutnya";
             this.btnSelanjutnya.Size = new System.Drawing.Size(243, 104);
             this.btnSelanjutnya.TabIndex = 14;
@@ -96,12 +97,22 @@
             this.lblDesc.Text = "lblDesc";
             this.lblDesc.Visible = false;
             // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(357, 427);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(153, 67);
+            this.btnHome.TabIndex = 14;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            // 
             // Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 520);
             this.Controls.Add(this.btnSebelumnya);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnSelanjutnya);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblName);
@@ -122,5 +133,6 @@
         private System.Windows.Forms.Button btnSebelumnya;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblDesc;
+        private System.Windows.Forms.Button btnHome;
     }
 }

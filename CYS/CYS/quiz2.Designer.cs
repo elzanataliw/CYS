@@ -39,18 +39,18 @@
             this.lblWarning = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.panelRB.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQuestion
             // 
             this.lblQuestion.AutoEllipsis = true;
-            this.lblQuestion.AutoSize = true;
             this.lblQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
             this.lblQuestion.Location = new System.Drawing.Point(3, 18);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(1280, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(691, 100);
             this.lblQuestion.TabIndex = 7;
             this.lblQuestion.Text = "Sekarang pilih kondisi kulit yang menurut kamu paling mencerminkan kulitmu";
             this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -135,7 +135,7 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
-            // lblWarning
+            // btnNext
             // 
             this.lblWarning.AutoSize = true;
             this.lblWarning.ForeColor = System.Drawing.Color.Red;
@@ -144,6 +144,25 @@
             this.lblWarning.Size = new System.Drawing.Size(102, 17);
             this.lblWarning.TabIndex = 11;
             this.lblWarning.Text = "warning pilihan";
+            this.btnNext.Location = new System.Drawing.Point(381, 444);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(101, 43);
+            this.btnNext.TabIndex = 11;
+            this.btnNext.Text = "Selanjutnya";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // panelRB
+            // 
+            this.panelRB.Controls.Add(this.rbNormal);
+            this.panelRB.Controls.Add(this.rbKering);
+            this.panelRB.Controls.Add(this.rbSensitif);
+            this.panelRB.Controls.Add(this.rbMix);
+            this.panelRB.Controls.Add(this.rbOily);
+            this.panelRB.Location = new System.Drawing.Point(220, 255);
+            this.panelRB.Name = "panelRB";
+            this.panelRB.Size = new System.Drawing.Size(415, 141);
+            this.panelRB.TabIndex = 12;
             // 
             // btnNext
             // 
@@ -167,18 +186,14 @@
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.rbMix);
-            this.Controls.Add(this.rbSensitif);
-            this.Controls.Add(this.rbOily);
-            this.Controls.Add(this.rbKering);
-            this.Controls.Add(this.rbNormal);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz2";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panelRB.ResumeLayout(false);
+            this.panelRB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

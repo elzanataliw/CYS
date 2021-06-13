@@ -37,6 +37,8 @@
             this.cbColourBalance = new System.Windows.Forms.CheckBox();
             this.lblWarning = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
+            this.panelCB = new System.Windows.Forms.Panel();
+            this.panelCB.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQuestion
@@ -46,9 +48,9 @@
             this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
             this.lblQuestion.Location = new System.Drawing.Point(202, 195);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(505, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(596, 46);
             this.lblQuestion.TabIndex = 3;
-            this.lblQuestion.Text = "Kondisi kulit yang diinginkan?";
+            this.lblQuestion.Text = "Pilih 2 kondisi kulit yang diinginkan";
             // 
             // label1
             // 
@@ -70,6 +72,7 @@
             this.cbLembab.TabIndex = 5;
             this.cbLembab.Text = "Lembab";
             this.cbLembab.UseVisualStyleBackColor = true;
+            this.cbLembab.CheckedChanged += new System.EventHandler(this.cbLembab_CheckedChanged);
             // 
             // cbJerawat
             // 
@@ -81,6 +84,7 @@
             this.cbJerawat.TabIndex = 5;
             this.cbJerawat.Text = "Mengurangi jerawat";
             this.cbJerawat.UseVisualStyleBackColor = true;
+            this.cbJerawat.CheckedChanged += new System.EventHandler(this.cbJerawat_CheckedChanged);
             // 
             // cbAging
             // 
@@ -92,6 +96,7 @@
             this.cbAging.TabIndex = 5;
             this.cbAging.Text = "Mengurangi tanda penuaan";
             this.cbAging.UseVisualStyleBackColor = true;
+            this.cbAging.CheckedChanged += new System.EventHandler(this.cbAging_CheckedChanged);
             // 
             // cbDaily
             // 
@@ -103,6 +108,7 @@
             this.cbDaily.TabIndex = 5;
             this.cbDaily.Text = "Perawatan rutin harian";
             this.cbDaily.UseVisualStyleBackColor = true;
+            this.cbDaily.CheckedChanged += new System.EventHandler(this.cbDaily_CheckedChanged);
             // 
             // cbColourBalance
             // 
@@ -114,6 +120,7 @@
             this.cbColourBalance.TabIndex = 5;
             this.cbColourBalance.Text = "Warna kulit merata";
             this.cbColourBalance.UseVisualStyleBackColor = true;
+            this.cbColourBalance.CheckedChanged += new System.EventHandler(this.cbColourBalance_CheckedChanged);
             // 
             // lblWarning
             // 
@@ -121,9 +128,10 @@
             this.lblWarning.ForeColor = System.Drawing.Color.Red;
             this.lblWarning.Location = new System.Drawing.Point(408, 245);
             this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(102, 17);
+            this.lblWarning.Size = new System.Drawing.Size(213, 17);
             this.lblWarning.TabIndex = 12;
-            this.lblWarning.Text = "warning pilihan";
+            this.lblWarning.Text = "Pilihan Tidak Boleh Lebih Dari 2!";
+            this.lblWarning.Visible = false;
             // 
             // btnNext
             // 
@@ -136,6 +144,20 @@
             this.btnNext.TabIndex = 13;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // panelCB
+            // 
+            this.panelCB.Controls.Add(this.cbLembab);
+            this.panelCB.Controls.Add(this.cbJerawat);
+            this.panelCB.Controls.Add(this.cbColourBalance);
+            this.panelCB.Controls.Add(this.cbDaily);
+            this.panelCB.Controls.Add(this.cbAging);
+            this.panelCB.Location = new System.Drawing.Point(147, 298);
+            this.panelCB.Name = "panelCB";
+            this.panelCB.Size = new System.Drawing.Size(554, 100);
+            this.panelCB.TabIndex = 14;
             // 
             // quiz3
             // 
@@ -146,17 +168,14 @@
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblWarning);
-            this.Controls.Add(this.cbColourBalance);
-            this.Controls.Add(this.cbDaily);
-            this.Controls.Add(this.cbAging);
-            this.Controls.Add(this.cbJerawat);
-            this.Controls.Add(this.cbLembab);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz3";
+            this.panelCB.ResumeLayout(false);
+            this.panelCB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +192,6 @@
         private System.Windows.Forms.CheckBox cbColourBalance;
         private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Panel panelCB;
     }
 }

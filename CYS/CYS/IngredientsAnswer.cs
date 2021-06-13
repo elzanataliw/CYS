@@ -6,31 +6,26 @@ using System.Threading.Tasks;
 
 namespace CYS
 {
-    class IngredientsAnswer
+    public class IngredientsAnswer
     {
-        private bool isPregnant;
+        private static bool isPregnant = false;
 
-        private bool isUsingBHAetc;
+        private static bool isUsingBHAetc = false;
 
-        private bool isUsingRetinol;
+        private static bool isUsingRetinol = false;
 
-        private List<string> targetCondition;
+        private static string targetCondition = null;
 
-        private List<string> skinWishCondition;
+        private static string skinWishCondition1 = null;
 
-        public bool IsPregnant { get => isPregnant; set => isPregnant = value; }
-        public bool IsUsingBHAetc { get => isUsingBHAetc; set => isUsingBHAetc = value; }
-        public bool IsUsingRetinol { get => isUsingRetinol; set => isUsingRetinol = value; }
-        public List<string> TargetCondition { get => targetCondition; set => targetCondition = value; }
-        public List<string> SkinWishCondition { get => skinWishCondition; set => skinWishCondition = value; }
+        private static string skinWishCondition2 = null;
 
-        public IngredientsAnswer(bool isPregnant, bool isUsingBHAetc, bool isUsingRetinol, List<string> targetCondition, List<string> skinWishCondition)
-        {
-            IsPregnant = isPregnant;
-            IsUsingBHAetc = isUsingBHAetc;
-            IsUsingRetinol = isUsingRetinol;
-            TargetCondition = targetCondition;
-            SkinWishCondition = skinWishCondition;
-        }
+        public static bool IsPregnant { get => isPregnant; set => isPregnant = value; }
+        public static bool IsUsingBHAetc { get => isUsingBHAetc; set => isUsingBHAetc = value; }
+        public static bool IsUsingRetinol { get => isUsingRetinol; set => isUsingRetinol = value; }
+        public static string TargetCondition { get => targetCondition; set => targetCondition = value; }
+        public static string SkinWishCondition1 { get => skinWishCondition1; set => skinWishCondition1 = value;}
+        public static string SkinWishCondition2 { get => skinWishCondition2; set => skinWishCondition2 = value; }
+
     }
 }

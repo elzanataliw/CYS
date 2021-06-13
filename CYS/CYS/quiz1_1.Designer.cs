@@ -45,6 +45,8 @@
             this.btnYa.TabIndex = 5;
             this.btnYa.Text = "Iya";
             this.btnYa.UseVisualStyleBackColor = false;
+            this.btnYa.UseVisualStyleBackColor = true;
+            this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
             // 
@@ -57,6 +59,8 @@
             this.btnNo.TabIndex = 6;
             this.btnNo.Text = "Tidak";
             this.btnNo.UseVisualStyleBackColor = false;
+            this.btnNo.UseVisualStyleBackColor = true;
+            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // lblQuestion
             // 
