@@ -75,6 +75,7 @@
             this.btn2.TabIndex = 9;
             this.btn2.Text = "1-3 Jam";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -84,6 +85,7 @@
             this.btn3.TabIndex = 9;
             this.btn3.Text = "4-6 Jam";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -93,6 +95,7 @@
             this.btn4.TabIndex = 9;
             this.btn4.Text = "7-8 Jam";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -102,6 +105,7 @@
             this.btn5.TabIndex = 9;
             this.btn5.Text = ">8 Jam";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // quiz5
             // 

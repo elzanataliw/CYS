@@ -20,12 +20,15 @@ namespace CYS
 
         private static string skinWishCondition2 = null;
 
+        private static bool isSPF = false;
+
         public static bool IsPregnant { get => isPregnant; set => isPregnant = value; }
         public static bool IsUsingBHAetc { get => isUsingBHAetc; set => isUsingBHAetc = value; }
         public static bool IsUsingRetinol { get => isUsingRetinol; set => isUsingRetinol = value; }
         public static string TargetCondition { get => targetCondition; set => targetCondition = value; }
         public static string SkinWishCondition1 { get => skinWishCondition1; set => skinWishCondition1 = value;}
         public static string SkinWishCondition2 { get => skinWishCondition2; set => skinWishCondition2 = value; }
+        public static bool IsSPF { get => isSPF; set => isSPF = value; }  
 
     }
 }

@@ -43,6 +43,7 @@
             this.btn1.TabIndex = 9;
             this.btn1.Text = "8-10 Malam";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lblQuestion
             // 
@@ -72,6 +73,7 @@
             this.btn2.TabIndex = 9;
             this.btn2.Text = "10-12 Malam";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -81,6 +83,7 @@
             this.btn3.TabIndex = 9;
             this.btn3.Text = "Lebih dari Jam 12 Malam";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // quiz6
             // 

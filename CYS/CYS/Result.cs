@@ -16,5 +16,10 @@ namespace CYS
         {
             InitializeComponent();
         }
+
+        private void Result_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

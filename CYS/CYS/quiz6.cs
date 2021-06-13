@@ -12,9 +12,30 @@ namespace CYS
 {
     public partial class quiz6 : Form
     {
+        Result Result = new Result();
         public quiz6()
         {
             InitializeComponent();
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Result.Show();
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Result.Show();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Result.Show();
         }
     }
 }
