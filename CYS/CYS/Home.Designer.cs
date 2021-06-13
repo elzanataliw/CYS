@@ -136,7 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.BackgroundImage = global::CYS.Properties.Resources.background1;
+            this.BackgroundImage = global::CYS.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btTips);
