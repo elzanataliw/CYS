@@ -53,9 +53,9 @@ namespace CYS
             this.NameCol,
             this.descCol});
             this.lstViewBahan.HideSelection = false;
-            this.lstViewBahan.Location = new System.Drawing.Point(67, 101);
+            this.lstViewBahan.Location = new System.Drawing.Point(76, 95);
             this.lstViewBahan.Name = "lstViewBahan";
-            this.lstViewBahan.Size = new System.Drawing.Size(748, 398);
+            this.lstViewBahan.Size = new System.Drawing.Size(766, 384);
             this.lstViewBahan.TabIndex = 4;
             this.lstViewBahan.UseCompatibleStateImageBehavior = false;
             this.lstViewBahan.View = System.Windows.Forms.View.Details;
@@ -73,11 +73,11 @@ namespace CYS
             // btHome
             // 
             this.btHome.BackColor = System.Drawing.SystemColors.Info;
-            this.btHome.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btHome.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btHome.Location = new System.Drawing.Point(813, 522);
+            this.btHome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btHome.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btHome.Location = new System.Drawing.Point(775, 494);
             this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(87, 33);
+            this.btHome.Size = new System.Drawing.Size(92, 37);
             this.btHome.TabIndex = 6;
             this.btHome.Text = "Home";
             this.btHome.UseVisualStyleBackColor = false;
