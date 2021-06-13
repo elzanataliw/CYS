@@ -36,39 +36,49 @@
             // 
             // btnYa
             // 
-            this.btnYa.Location = new System.Drawing.Point(95, 292);
+            this.btnYa.BackColor = System.Drawing.SystemColors.Info;
+            this.btnYa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnYa.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnYa.Location = new System.Drawing.Point(202, 322);
             this.btnYa.Name = "btnYa";
-            this.btnYa.Size = new System.Drawing.Size(243, 104);
+            this.btnYa.Size = new System.Drawing.Size(200, 85);
             this.btnYa.TabIndex = 9;
             this.btnYa.Text = "Iya";
+            this.btnYa.UseVisualStyleBackColor = false;
             this.btnYa.UseVisualStyleBackColor = true;
             this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
             // 
-            this.btnNo.Location = new System.Drawing.Point(438, 292);
+            this.btnNo.BackColor = System.Drawing.SystemColors.Info;
+            this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnNo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnNo.Location = new System.Drawing.Point(524, 322);
             this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(243, 104);
+            this.btnNo.Size = new System.Drawing.Size(200, 85);
             this.btnNo.TabIndex = 10;
             this.btnNo.Text = "Tidak";
+            this.btnNo.UseVisualStyleBackColor = false;
             this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // lblQuestion
             // 
             this.lblQuestion.AutoSize = true;
+            this.lblQuestion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(225, 153);
+            this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.lblQuestion.Location = new System.Drawing.Point(182, 227);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(364, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(548, 46);
             this.lblQuestion.TabIndex = 7;
-            this.lblQuestion.Text = "Sedang pakai retinol?";
+            this.lblQuestion.Text = "Apakah sedang memakai retinol?";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(289, 14);
+            this.label1.Location = new System.Drawing.Point(327, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 57);
             this.label1.TabIndex = 8;
@@ -78,11 +88,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 509);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnYa);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz4_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz4_1";

@@ -36,8 +36,8 @@
             this.rbSensitif = new System.Windows.Forms.RadioButton();
             this.rbMix = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
-            this.panelRB = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.panelRB.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             this.lblQuestion.AutoEllipsis = true;
             this.lblQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
             this.lblQuestion.Location = new System.Drawing.Point(3, 18);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(691, 100);
@@ -58,7 +59,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(314, 24);
+            this.label1.Location = new System.Drawing.Point(327, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 57);
             this.label1.TabIndex = 8;
@@ -67,7 +68,8 @@
             // rbNormal
             // 
             this.rbNormal.AutoSize = true;
-            this.rbNormal.Location = new System.Drawing.Point(23, 26);
+            this.rbNormal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.rbNormal.Location = new System.Drawing.Point(120, 353);
             this.rbNormal.Name = "rbNormal";
             this.rbNormal.Size = new System.Drawing.Size(74, 21);
             this.rbNormal.TabIndex = 9;
@@ -78,7 +80,8 @@
             // rbKering
             // 
             this.rbKering.AutoSize = true;
-            this.rbKering.Location = new System.Drawing.Point(104, 86);
+            this.rbKering.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.rbKering.Location = new System.Drawing.Point(376, 353);
             this.rbKering.Name = "rbKering";
             this.rbKering.Size = new System.Drawing.Size(70, 21);
             this.rbKering.TabIndex = 9;
@@ -89,7 +92,8 @@
             // rbOily
             // 
             this.rbOily.AutoSize = true;
-            this.rbOily.Location = new System.Drawing.Point(317, 26);
+            this.rbOily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.rbOily.Location = new System.Drawing.Point(666, 353);
             this.rbOily.Name = "rbOily";
             this.rbOily.Size = new System.Drawing.Size(95, 21);
             this.rbOily.TabIndex = 9;
@@ -100,7 +104,8 @@
             // rbSensitif
             // 
             this.rbSensitif.AutoSize = true;
-            this.rbSensitif.Location = new System.Drawing.Point(185, 26);
+            this.rbSensitif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.rbSensitif.Location = new System.Drawing.Point(564, 436);
             this.rbSensitif.Name = "rbSensitif";
             this.rbSensitif.Size = new System.Drawing.Size(75, 21);
             this.rbSensitif.TabIndex = 9;
@@ -111,7 +116,8 @@
             // rbMix
             // 
             this.rbMix.AutoSize = true;
-            this.rbMix.Location = new System.Drawing.Point(245, 86);
+            this.rbMix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.rbMix.Location = new System.Drawing.Point(278, 436);
             this.rbMix.Name = "rbMix";
             this.rbMix.Size = new System.Drawing.Size(94, 21);
             this.rbMix.TabIndex = 9;
@@ -122,7 +128,8 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblQuestion);
-            this.groupBox1.Location = new System.Drawing.Point(80, 87);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.groupBox1.Location = new System.Drawing.Point(107, 165);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(697, 121);
             this.groupBox1.TabIndex = 10;
@@ -130,6 +137,13 @@
             // 
             // btnNext
             // 
+            this.lblWarning.AutoSize = true;
+            this.lblWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblWarning.Location = new System.Drawing.Point(401, 289);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(102, 17);
+            this.lblWarning.TabIndex = 11;
+            this.lblWarning.Text = "warning pilihan";
             this.btnNext.Location = new System.Drawing.Point(381, 444);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(101, 43);
@@ -150,15 +164,30 @@
             this.panelRB.Size = new System.Drawing.Size(415, 141);
             this.panelRB.TabIndex = 12;
             // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(225)))), ((int)(((byte)(80)))));
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnNext.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnNext.Location = new System.Drawing.Point(794, 492);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(82, 40);
+            this.btnNext.TabIndex = 14;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = false;
+            // 
             // quiz2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 509);
-            this.Controls.Add(this.panelRB);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz2";
@@ -180,7 +209,7 @@
         private System.Windows.Forms.RadioButton rbSensitif;
         private System.Windows.Forms.RadioButton rbMix;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Panel panelRB;
     }
 }

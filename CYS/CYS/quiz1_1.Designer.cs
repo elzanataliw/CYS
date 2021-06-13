@@ -36,21 +36,29 @@
             // 
             // btnYa
             // 
-            this.btnYa.Location = new System.Drawing.Point(139, 341);
+            this.btnYa.BackColor = System.Drawing.SystemColors.Info;
+            this.btnYa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnYa.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnYa.Location = new System.Drawing.Point(202, 322);
             this.btnYa.Name = "btnYa";
-            this.btnYa.Size = new System.Drawing.Size(243, 104);
+            this.btnYa.Size = new System.Drawing.Size(200, 85);
             this.btnYa.TabIndex = 5;
             this.btnYa.Text = "Iya";
+            this.btnYa.UseVisualStyleBackColor = false;
             this.btnYa.UseVisualStyleBackColor = true;
             this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
             // 
-            this.btnNo.Location = new System.Drawing.Point(483, 341);
+            this.btnNo.BackColor = System.Drawing.SystemColors.Info;
+            this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnNo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnNo.Location = new System.Drawing.Point(524, 322);
             this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(243, 104);
+            this.btnNo.Size = new System.Drawing.Size(200, 85);
             this.btnNo.TabIndex = 6;
             this.btnNo.Text = "Tidak";
+            this.btnNo.UseVisualStyleBackColor = false;
             this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
@@ -58,7 +66,8 @@
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(220, 159);
+            this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.lblQuestion.Location = new System.Drawing.Point(240, 227);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(438, 46);
             this.lblQuestion.TabIndex = 3;
@@ -68,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(321, 23);
+            this.label1.Location = new System.Drawing.Point(327, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 57);
             this.label1.TabIndex = 4;
@@ -78,11 +87,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 506);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnYa);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz1_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Skin Quiz";

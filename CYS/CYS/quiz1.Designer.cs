@@ -39,7 +39,7 @@ namespace CYS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(300, 9);
+            this.label1.Location = new System.Drawing.Point(327, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 57);
             this.label1.TabIndex = 1;
@@ -49,29 +49,36 @@ namespace CYS
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(138, 150);
+            this.lblQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(150)))));
+            this.lblQuestion.Location = new System.Drawing.Point(137, 227);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(578, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(640, 46);
             this.lblQuestion.TabIndex = 1;
-            this.lblQuestion.Text = "Tanya dong, Kamu cowo apa cewe?";
+            this.lblQuestion.Text = "Mau nanya nih, kamu cowo atau cewe?";
             // 
             // btnCewe
             // 
-            this.btnCewe.Location = new System.Drawing.Point(473, 302);
+            this.btnCewe.BackColor = System.Drawing.SystemColors.Info;
+            this.btnCewe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnCewe.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCewe.Location = new System.Drawing.Point(524, 322);
             this.btnCewe.Name = "btnCewe";
-            this.btnCewe.Size = new System.Drawing.Size(243, 104);
+            this.btnCewe.Size = new System.Drawing.Size(200, 85);
             this.btnCewe.TabIndex = 2;
             this.btnCewe.Text = "Cewe";
-            this.btnCewe.UseVisualStyleBackColor = true;
-            this.btnCewe.Click += new System.EventHandler(this.btnCewe_Click);
+            this.btnCewe.UseVisualStyleBackColor = false;
             // 
             // btnCowo
             // 
-            this.btnCowo.Location = new System.Drawing.Point(129, 302);
+            this.btnCowo.BackColor = System.Drawing.SystemColors.Info;
+            this.btnCowo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnCowo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCowo.Location = new System.Drawing.Point(202, 322);
             this.btnCowo.Name = "btnCowo";
-            this.btnCowo.Size = new System.Drawing.Size(243, 104);
+            this.btnCowo.Size = new System.Drawing.Size(200, 85);
             this.btnCowo.TabIndex = 2;
             this.btnCowo.Text = "Cowo";
+            this.btnCowo.UseVisualStyleBackColor = false;
             this.btnCowo.UseVisualStyleBackColor = true;
             this.btnCowo.Click += new System.EventHandler(this.btnCowo_Click);
             // 
@@ -79,7 +86,9 @@ namespace CYS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 553);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::CYS.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(912, 567);
             this.Controls.Add(this.btnCowo);
             this.Controls.Add(this.btnCewe);
             this.Controls.Add(this.lblQuestion);
