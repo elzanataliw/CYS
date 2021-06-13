@@ -42,6 +42,7 @@
             this.btnYa.TabIndex = 5;
             this.btnYa.Text = "Iya";
             this.btnYa.UseVisualStyleBackColor = true;
+            this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
             // 
@@ -51,6 +52,7 @@
             this.btnNo.TabIndex = 6;
             this.btnNo.Text = "Tidak";
             this.btnNo.UseVisualStyleBackColor = true;
+            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // lblQuestion
             // 
@@ -82,6 +84,7 @@
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
             this.Name = "quiz1_1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Skin Quiz";
             this.ResumeLayout(false);
             this.PerformLayout();

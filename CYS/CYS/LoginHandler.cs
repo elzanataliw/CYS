@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CYS
 {
-    public static class LoginHandler
+    public class LoginHandler
     {
         public static string username ;
         public static bool loginstatus;

@@ -16,5 +16,21 @@ namespace CYS
         {
             InitializeComponent();
         }
+
+        private void btnYa_Click(object sender, EventArgs e)
+        {
+            IngredientsAnswer.IsPregnant = true;
+
+            this.Hide();
+            quiz2 quiz = new quiz2();
+            quiz.Show();
+        }
+
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            quiz2 quiz = new quiz2();
+            quiz.Show();
+        }
     }
 }

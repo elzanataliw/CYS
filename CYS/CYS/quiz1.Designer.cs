@@ -39,7 +39,7 @@ namespace CYS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(321, 23);
+            this.label1.Location = new System.Drawing.Point(300, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 57);
             this.label1.TabIndex = 1;
@@ -63,6 +63,7 @@ namespace CYS
             this.btnCewe.TabIndex = 2;
             this.btnCewe.Text = "Cewe";
             this.btnCewe.UseVisualStyleBackColor = true;
+            this.btnCewe.Click += new System.EventHandler(this.btnCewe_Click);
             // 
             // btnCowo
             // 
@@ -72,8 +73,9 @@ namespace CYS
             this.btnCowo.TabIndex = 2;
             this.btnCowo.Text = "Cowo";
             this.btnCowo.UseVisualStyleBackColor = true;
+            this.btnCowo.Click += new System.EventHandler(this.btnCowo_Click);
             // 
-            // Skinquiz
+            // quiz1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,7 +86,7 @@ namespace CYS
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Skinquiz";
+            this.Name = "quiz1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Skin Quiz";
             this.ResumeLayout(false);

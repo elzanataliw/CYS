@@ -16,5 +16,19 @@ namespace CYS
         {
             InitializeComponent();
         }
+
+        private void btnCowo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            quiz2 quiz = new quiz2();
+            quiz.Show();
+        }
+
+        private void btnCewe_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            quiz1_1 quiz = new quiz1_1();
+            quiz.Show();
+        }
     }
 }

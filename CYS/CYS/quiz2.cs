@@ -16,6 +16,25 @@ namespace CYS
         {
             InitializeComponent();
         }
-        
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            var checkedButton = panelRB.Controls.OfType<RadioButton>()
+                                      .FirstOrDefault(r => r.Checked);
+
+            if (checkedButton != null)
+            {
+                IngredientsAnswer.TargetCondition = checkedButton.Text.ToString();
+
+                quiz3 quiz = new quiz3();
+                quiz.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Harap pilih pilihan diatas");
+            }
+            
+        }
     }
 }

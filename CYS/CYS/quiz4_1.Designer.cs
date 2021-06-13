@@ -36,21 +36,23 @@
             // 
             // btnYa
             // 
-            this.btnYa.Location = new System.Drawing.Point(107, 332);
+            this.btnYa.Location = new System.Drawing.Point(95, 292);
             this.btnYa.Name = "btnYa";
             this.btnYa.Size = new System.Drawing.Size(243, 104);
             this.btnYa.TabIndex = 9;
             this.btnYa.Text = "Iya";
             this.btnYa.UseVisualStyleBackColor = true;
+            this.btnYa.Click += new System.EventHandler(this.btnYa_Click);
             // 
             // btnNo
             // 
-            this.btnNo.Location = new System.Drawing.Point(451, 332);
+            this.btnNo.Location = new System.Drawing.Point(438, 292);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(243, 104);
             this.btnNo.TabIndex = 10;
             this.btnNo.Text = "Tidak";
             this.btnNo.UseVisualStyleBackColor = true;
+            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // lblQuestion
             // 
@@ -76,12 +78,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(870, 509);
             this.Controls.Add(this.btnYa);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
             this.Name = "quiz4_1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz4_1";
             this.ResumeLayout(false);
             this.PerformLayout();

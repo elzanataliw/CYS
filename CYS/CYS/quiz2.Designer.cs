@@ -36,19 +36,20 @@
             this.rbSensitif = new System.Windows.Forms.RadioButton();
             this.rbMix = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblWarning = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.panelRB = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.panelRB.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQuestion
             // 
             this.lblQuestion.AutoEllipsis = true;
-            this.lblQuestion.AutoSize = true;
             this.lblQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.Location = new System.Drawing.Point(3, 18);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(1280, 46);
+            this.lblQuestion.Size = new System.Drawing.Size(691, 100);
             this.lblQuestion.TabIndex = 7;
             this.lblQuestion.Text = "Sekarang pilih kondisi kulit yang menurut kamu paling mencerminkan kulitmu";
             this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -66,7 +67,7 @@
             // rbNormal
             // 
             this.rbNormal.AutoSize = true;
-            this.rbNormal.Location = new System.Drawing.Point(80, 320);
+            this.rbNormal.Location = new System.Drawing.Point(23, 26);
             this.rbNormal.Name = "rbNormal";
             this.rbNormal.Size = new System.Drawing.Size(74, 21);
             this.rbNormal.TabIndex = 9;
@@ -77,7 +78,7 @@
             // rbKering
             // 
             this.rbKering.AutoSize = true;
-            this.rbKering.Location = new System.Drawing.Point(336, 320);
+            this.rbKering.Location = new System.Drawing.Point(104, 86);
             this.rbKering.Name = "rbKering";
             this.rbKering.Size = new System.Drawing.Size(70, 21);
             this.rbKering.TabIndex = 9;
@@ -88,7 +89,7 @@
             // rbOily
             // 
             this.rbOily.AutoSize = true;
-            this.rbOily.Location = new System.Drawing.Point(626, 320);
+            this.rbOily.Location = new System.Drawing.Point(317, 26);
             this.rbOily.Name = "rbOily";
             this.rbOily.Size = new System.Drawing.Size(95, 21);
             this.rbOily.TabIndex = 9;
@@ -99,7 +100,7 @@
             // rbSensitif
             // 
             this.rbSensitif.AutoSize = true;
-            this.rbSensitif.Location = new System.Drawing.Point(524, 403);
+            this.rbSensitif.Location = new System.Drawing.Point(185, 26);
             this.rbSensitif.Name = "rbSensitif";
             this.rbSensitif.Size = new System.Drawing.Size(75, 21);
             this.rbSensitif.TabIndex = 9;
@@ -110,7 +111,7 @@
             // rbMix
             // 
             this.rbMix.AutoSize = true;
-            this.rbMix.Location = new System.Drawing.Point(238, 403);
+            this.rbMix.Location = new System.Drawing.Point(245, 86);
             this.rbMix.Name = "rbMix";
             this.rbMix.Size = new System.Drawing.Size(94, 21);
             this.rbMix.TabIndex = 9;
@@ -127,33 +128,43 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
-            // lblWarning
+            // btnNext
             // 
-            this.lblWarning.AutoSize = true;
-            this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(88, 232);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(102, 17);
-            this.lblWarning.TabIndex = 11;
-            this.lblWarning.Text = "warning pilihan";
+            this.btnNext.Location = new System.Drawing.Point(381, 444);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(101, 43);
+            this.btnNext.TabIndex = 11;
+            this.btnNext.Text = "Selanjutnya";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // panelRB
+            // 
+            this.panelRB.Controls.Add(this.rbNormal);
+            this.panelRB.Controls.Add(this.rbKering);
+            this.panelRB.Controls.Add(this.rbSensitif);
+            this.panelRB.Controls.Add(this.rbMix);
+            this.panelRB.Controls.Add(this.rbOily);
+            this.panelRB.Location = new System.Drawing.Point(220, 255);
+            this.panelRB.Name = "panelRB";
+            this.panelRB.Size = new System.Drawing.Size(415, 141);
+            this.panelRB.TabIndex = 12;
             // 
             // quiz2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 509);
-            this.Controls.Add(this.lblWarning);
+            this.Controls.Add(this.panelRB);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.rbMix);
-            this.Controls.Add(this.rbSensitif);
-            this.Controls.Add(this.rbOily);
-            this.Controls.Add(this.rbKering);
-            this.Controls.Add(this.rbNormal);
             this.Controls.Add(this.label1);
             this.Name = "quiz2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quiz2";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panelRB.ResumeLayout(false);
+            this.panelRB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,6 +180,7 @@
         private System.Windows.Forms.RadioButton rbSensitif;
         private System.Windows.Forms.RadioButton rbMix;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblWarning;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Panel panelRB;
     }
 }

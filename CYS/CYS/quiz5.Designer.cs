@@ -45,6 +45,7 @@
             this.btn1.TabIndex = 9;
             this.btn1.Text = "<1 jam";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lblQuestion
             // 
@@ -106,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(855, 450);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);

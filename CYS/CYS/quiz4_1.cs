@@ -16,5 +16,21 @@ namespace CYS
         {
             InitializeComponent();
         }
+
+        private void btnYa_Click(object sender, EventArgs e)
+        {
+            IngredientsAnswer.IsUsingRetinol = true;
+
+            quiz4_2 quiz = new quiz4_2();
+            quiz.Show();
+            this.Hide();
+        }
+
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+            quiz4_2 quiz = new quiz4_2();
+            quiz.Show();
+            this.Hide();
+        }
     }
 }
