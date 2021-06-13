@@ -135,6 +135,7 @@
             this.Controls.Add(this.btnSelanjutnya);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Result";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

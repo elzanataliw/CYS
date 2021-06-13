@@ -107,6 +107,7 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "quiz6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

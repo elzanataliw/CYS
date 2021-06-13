@@ -93,6 +93,7 @@ namespace CYS
             this.Controls.Add(this.btnCewe);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "quiz1";
